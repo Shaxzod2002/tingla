@@ -14,7 +14,19 @@
 
 <body>
     <div class="page__container">
-
+        <!-- Mobile Menu -->
+        <div class="mobile__menu">
+            <div class="date">
+                <span class="date__hour"></span> :
+                <span class="date__minute"></span> :
+                <span class="date__second"></span>
+            </div>
+            <div class="charge">
+                <i class="fas fa-signal"></i>
+                <i class="fas fas fas fa-wifi"></i>
+                <i class="fas fas fa-battery-full"></i>
+            </div>
+        </div>
         <!-- Start Page Header -->
         <section class="page__one">
             <div class="menu__brand">
@@ -33,9 +45,7 @@
                     </p>
                     <a href="#" class="btn header__btn">Yuklab Olish</a>
                 </div>
-                <div class="header-right">
-
-                </div>
+                <div class="header-right"></div>
             </header>
             <div class="circle">
                 <img src="./images/circle.png" alt="circle">
@@ -160,12 +170,12 @@
                 <div class="footer__menu">
                     <div class="footer__menu-brand">
                         <div class="brand">
-                            <img src="./images/logo/logo.png" class="brand-icon" alt="Tingla Brand">
-                            <h1 class="menu__title">Tingla</h1>
+                            <div class="logo">
+                                <img src="./images/logo/logo.png" class="brand-icon" alt="Tingla Brand">
+                                <h1 class="menu__title">Tingla</h1>
+                            </div>
+                            <p>Barcha huquqlar himoyalangan</p>
                         </div>
-                        <p>Barcha huquqlar himoyalangan</p>
-                    </div>
-                    <div class="menu__page">
                         <ul class="list__group">
                             <li class="list__item">
                                 <a href="#" class="list__link">Maxfiylik siyosati</a>
@@ -205,6 +215,9 @@
         </section>
         <!-- End Page Footer -->
     </div>
+
+    <!-- Adding external javascript  -->
+    <script src="index.js"></script>
 </body>
 
 </html>
