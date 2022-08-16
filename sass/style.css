@@ -133,7 +133,7 @@
   min-height: 90vh;
   border-radius: 20px;
   background: url(../images/main/main__top/top.png) no-repeat center;
-  background-size: cover;
+  background-size: contain;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -523,6 +523,9 @@
   -o-transform: scale(1.2);
 }
 @media (max-width: 768px) {
+  .page__container .mobile__menu {
+    display: flex;
+  }
   .page__container .page__one .start {
     left: 21% !important;
     top: 13%;
@@ -619,7 +622,7 @@
     width: 300px;
     position: absolute;
     top: -550px;
-    left: 0;
+    left: calc(50% - 150px);
   }
   .page__container .page__three .audio__books .audio__books-top {
     min-height: 40vh !important;
@@ -628,6 +631,7 @@
   .page__container .page__three .audio__books .audio__books-top .left {
     width: 100% !important;
     min-height: 40vh !important;
+    background-size: contain;
   }
   .page__container .page__three .audio__books .audio__books-top .right {
     width: 100% !important;
@@ -639,6 +643,13 @@
   }
   .page__container .page__three .audio__books .audio__books-top .right .paragraph {
     font-size: 18px;
+  }
+  .page__container .page__three .audio__books .audio__books-top .abstract {
+    top: -100px;
+    left: 80%;
+  }
+  .page__container .page__three .audio__books .audio__books-top .abstract img {
+    width: 60px;
   }
   .page__container .page__three .audio__books .audio__books-center {
     margin-top: 300px;
@@ -668,6 +679,7 @@
   }
   .page__container .page__three .audio__books .audio__books-center .right .phone {
     width: 250px;
+    left: calc(50% - 125px);
   }
   .page__container .page__three .audio__books .audio__books-bottom {
     margin-top: 200px !important;
@@ -692,20 +704,139 @@
   .page__container .page__three .audio__books .start .start__icon {
     width: 80px;
   }
+  .page__container .page__fourth .page__footer {
+    padding: 40px 0;
+  }
+  .page__container .page__fourth .page__footer .footer__menu {
+    row-gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page__container .page__fourth .page__footer .footer__menu .footer__menu-brand {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    column-gap: 0 !important;
+  }
+  .page__container .page__fourth .page__footer .footer__menu .menu__link {
+    align-items: start;
+  }
 }
-.page__container .page__fourth .page__footer {
-  padding: 40px 0;
+@media (min-width: 768px) and (max-width: 992px) {
+  .page__container .page__one .start img {
+    width: 120px;
+  }
+  .page__container .page__one .page__header .header-left .header__title {
+    font-size: 40px;
+    line-height: 2.5rem;
+  }
+  .page__container .page__one .page__header .header-left .header__paragraph {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+  .page__container .page__one .page__header .header-left .header__btn {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .page__container .page__one .page__header .header-right {
+    background-position-y: center;
+  }
+  .page__container .page__one .circle {
+    left: 10%;
+  }
+  .page__container .page__one .circle img {
+    width: 80px;
+  }
+  .page__container .page__one .asterisk {
+    left: 80%;
+  }
+  .page__container .page__one .asterisk img {
+    width: 70px;
+  }
+  .page__container .page__two .page__main .main__top {
+    background-size: contain;
+  }
+  .page__container .page__two .page__main .main__bottom .start img {
+    width: 120px;
+  }
+  .page__container .page__two .page__main .main__bottom .about__project .left .about__project-title {
+    font-size: 35px;
+  }
+  .page__container .page__two .page__main .main__bottom .about__project .left .about__project-paragraph {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  .page__container .page__two .page__main .main__bottom .about__project .right .phone {
+    top: -20px;
+    left: 0;
+    width: 400px;
+  }
+  .page__container .page__three .audio__books .audio__books-top .right .title {
+    font-size: 35px;
+    line-height: 2.5rem;
+  }
+  .page__container .page__three .audio__books .audio__books-top .right .paragraph {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  .page__container .page__three .audio__books .audio__books-top .abstract img {
+    width: 80px;
+  }
+  .page__container .page__three .audio__books .audio__books-center .left .title {
+    font-size: 40px;
+  }
+  .page__container .page__three .audio__books .audio__books-center .left .paragraph {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  .page__container .page__three .audio__books .audio__books-center .right .phone {
+    top: -50px;
+    width: 300px;
+  }
+  .page__container .page__three .audio__books .audio__books-center .asterisk img {
+    width: 80px;
+  }
+  .page__container .page__three .audio__books .audio__books-bottom .left {
+    background-size: 90%;
+    background-position-y: bottom;
+  }
+  .page__container .page__three .start {
+    top: 98% !important;
+  }
 }
-.page__container .page__fourth .page__footer .footer__menu {
-  row-gap: 40px;
-  align-items: center;
-  justify-content: space-between;
-}
-.page__container .page__fourth .page__footer .footer__menu .footer__menu-brand {
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  column-gap: 0 !important;
-}
-.page__container .page__fourth .page__footer .footer__menu .menu__link {
-  align-items: start;
+@media (min-width: 992px) and (max-width: 1200px) {
+  .page__container .page__one .page__header .header-left .header__title {
+    font-size: 50px;
+  }
+  .page__container .page__one .page__header .header-left .header__paragraph {
+    font-size: 22px;
+  }
+  .page__container .page__two .page__main .main__top {
+    background-size: contain;
+  }
+  .page__container .page__two .page__main .main__bottom .about__project .left .about__project-paragraph {
+    font-size: 18px;
+  }
+  .page__container .page__two .page__main .main__bottom .about__project .right .phone {
+    top: -80px;
+    left: 0;
+    width: 450px;
+  }
+  .page__container .page__three .audio__books .audio__books-center .left .title {
+    font-size: 40px;
+  }
+  .page__container .page__three .audio__books .audio__books-center .left .paragraph {
+    font-size: 18px;
+  }
+  .page__container .page__three .audio__books .audio__books-center .right .phone {
+    top: -100px;
+    width: 350px;
+  }
+  .page__container .page__three .audio__books .audio__books-bottom .left {
+    background-size: 90%;
+    background-position-y: bottom;
+  }
+  .page__container .page__three .start {
+    top: 98% !important;
+  }
 }/*# sourceMappingURL=style.css.map */
